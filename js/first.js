@@ -4,3 +4,10 @@
 - A függvény szorozza meg a tömbelemek értékét 1.27-tel, majd pedig 
 __térjen vissza__ az elemek egész számra kerekített összegével!
 */
+
+const brutto = (numbers) => {
+    numbers.forEach((number, i) => numbers[i] = number * 1.27);
+    numbers.forEach((number, i) => numbers[i] = Math.round(number));
+    return numbers;
+};
+
