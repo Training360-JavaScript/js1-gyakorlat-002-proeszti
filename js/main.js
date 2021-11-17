@@ -5,12 +5,12 @@
 - A HTML-template egy lista, amelynek a listaelemei a kapott tömb értékeit tartalmazzák.
 */
 
-const generateList = (strings) => {
+let list = [];
 
-    let template = "<ul>";
 
-    strings.forEach(e => template = template + "<li>" + e + "</li>")
+function generateList(lista) {
 
-    template = template + "</ul>"
-    return template;
-};
+    return returnValue = '<ul> <li>' + lista.join(' </li> <li>') + ' </li> </ul>';
+
+}
+generateList(list);
